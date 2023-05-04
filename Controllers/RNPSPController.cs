@@ -11,7 +11,7 @@ namespace WebApiRestIPH.Controllers
     public class RNPSPController : ApiController
     {
 
-        public string Get()
+        public List<IPH> Get()
 
 
         {
@@ -52,8 +52,8 @@ namespace WebApiRestIPH.Controllers
             per3.curp = "SALU8501019MMSZLM02";
             per3.fechanac = "01011985";
             personas.Add(per3);
-            string json = JsonConvert.SerializeObject(personas);
-            return json;
+            //string json = JsonConvert.SerializeObject(personas);
+            return personas;
 
 
         }
