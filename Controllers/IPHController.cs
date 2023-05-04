@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+
+
 
 namespace WebApiRestIPH.Controllers
 {
@@ -11,8 +14,9 @@ namespace WebApiRestIPH.Controllers
     {
 
 
-        // GET api/values
-        public List<IPH> Get()
+        public string Get()
+ 
+
         {
             List<IPH> personas = new List<IPH>();
             IPH per = new IPH();
@@ -25,7 +29,18 @@ namespace WebApiRestIPH.Controllers
 
             personas.Add(per);
 
-            return personas;
+            per.idFuente = 3;
+            per.nombre = "JUAN";
+            per.paterno = "PEREZ";
+            per.materno = "MATINEZ";
+            per.curp = "MAVA750909MMSZLM01";
+            per.fechanac = "09/09/1975";
+            personas.Add(per);
+
+            string json = JsonConvert.SerializeObject(personas);
+            return json;
+
+
         }
 
         // GET api/values/5
