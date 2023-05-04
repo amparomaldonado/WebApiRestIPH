@@ -42,6 +42,14 @@ namespace WebApiRestIPH.Controllers
             per.fechanac = "09/09/1975";
             personas.Add(per);
 
+
+            per.idFuente = 3;
+            per.nombre = "LUIS";
+            per.paterno = "SANCHEZ";
+            per.materno = "MORALES";
+            per.curp = "SALU7220109MMSZLM02";
+            per.fechanac = "09/09/1975";
+            personas.Add(per);
             string json = JsonConvert.SerializeObject(personas);
             return json;
 
