@@ -22,7 +22,7 @@ namespace WebApiRestIPH.Controllers
             per.paterno = "PEREZ";
             per.materno = "MATINEZ";
             per.curp = "MAVA750909MMSZLM01";
-            per.fechanac = "09/09/1975";
+            per.fechanac = "09091975";
 
             personas.Add(per);
 
@@ -32,7 +32,7 @@ namespace WebApiRestIPH.Controllers
             per1.paterno = "MEDINA";
             per1.materno = "MATINEZ";
             per1.curp = "JAVA720109MMSZLM02";
-            per1.fechanac = "09/01/1972";
+            per1.fechanac = "09011972";
             personas.Add(per1);
 
             IPH per2 = new IPH();
@@ -41,7 +41,7 @@ namespace WebApiRestIPH.Controllers
             per2.paterno = "MEJIA";
             per2.materno = "MORALES";
             per2.curp = "MOMA7120109MMSZLM02";
-            per2.fechanac = "10/20/1971";
+            per2.fechanac = "10201971";
             personas.Add(per2);
 
             IPH per3 = new IPH();
@@ -50,7 +50,7 @@ namespace WebApiRestIPH.Controllers
             per3.paterno = "SANCHEZ";
             per3.materno = "MORALES";
             per3.curp = "SALU8501019MMSZLM02";
-            per3.fechanac = "01/01/1985";
+            per3.fechanac = "01011985";
             personas.Add(per3);
             string json = JsonConvert.SerializeObject(personas);
             return json;
