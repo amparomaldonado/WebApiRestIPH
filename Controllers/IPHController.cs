@@ -14,18 +14,9 @@ namespace WebApiRestIPH.Controllers
     {
 
 
-        // GET api/values
-
-        [HttpGet]
-
-        /*   public ActionResult<Product> GetById_ActionResultOfT(int id)
-           {
-               var product = _productContext.Products.Find(id);
-               return product == null ? NotFound() : product;
-           }*/
-
         public string Get()
-        //public ActionResult<List<IPH>>  Get()
+ 
+
         {
             List<IPH> personas = new List<IPH>();
             IPH per = new IPH();
@@ -37,6 +28,7 @@ namespace WebApiRestIPH.Controllers
             per.fechanac = "09/09/1975";
 
             personas.Add(per);
+
             per.idFuente = 3;
             per.nombre = "JUAN";
             per.paterno = "PEREZ";
@@ -47,6 +39,8 @@ namespace WebApiRestIPH.Controllers
 
             string json = JsonConvert.SerializeObject(personas);
             return json;
+
+
         }
 
         // GET api/values/5
