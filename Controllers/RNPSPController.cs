@@ -26,30 +26,32 @@ namespace WebApiRestIPH.Controllers
 
             personas.Add(per);
 
-            per.idFuente = 3;
-            per.nombre = "JOSE";
-            per.paterno = "MEDINA";
-            per.materno = "MATINEZ";
-            per.curp = "JAVA720109MMSZLM02";
-            per.fechanac = "09/09/1975";
-            personas.Add(per);
+            IPH per1 = new IPH();
+            per1.idFuente = 3;
+            per1.nombre = "JOSE";
+            per1.paterno = "MEDINA";
+            per1.materno = "MATINEZ";
+            per1.curp = "JAVA720109MMSZLM02";
+            per1.fechanac = "09/09/1975";
+            personas.Add(per1);
 
-            per.idFuente = 3;
-            per.nombre = "ALBERTO";
-            per.paterno = "MEJIA";
-            per.materno = "MORALES";
-            per.curp = "MOMA7220109MMSZLM02";
-            per.fechanac = "09/09/1975";
-            personas.Add(per);
+            IPH per2 = new IPH();
+            per2.idFuente = 3;
+            per2.nombre = "ALBERTO";
+            per2.paterno = "MEJIA";
+            per2.materno = "MORALES";
+            per2.curp = "MOMA7220109MMSZLM02";
+            per2.fechanac = "09/09/1975";
+            personas.Add(per2);
 
-
-            per.idFuente = 3;
-            per.nombre = "LUIS";
-            per.paterno = "SANCHEZ";
-            per.materno = "MORALES";
-            per.curp = "SALU7220109MMSZLM02";
-            per.fechanac = "09/09/1975";
-            personas.Add(per);
+            IPH per3 = new IPH();
+            per3.idFuente = 3;
+            per3.nombre = "LUIS";
+            per3.paterno = "SANCHEZ";
+            per3.materno = "MORALES";
+            per3.curp = "SALU7220109MMSZLM02";
+            per3.fechanac = "09/09/1975";
+            personas.Add(per3);
             string json = JsonConvert.SerializeObject(personas);
             return json;
 
